@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { InfinitySpin } from 'react-loader-spinner'
 import './App.css'
 import { FaSearch } from "react-icons/fa";
-
+const key=import.meta.env.VITE_API_KEY
 
 const App = () => {
 
@@ -15,7 +15,7 @@ const App = () => {
     const cityName=city ? city : "London"
 
     try {
-      const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${import.meta.env.VITE_API_KEY}`)
+      const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${key}`)
       const data=await response.json()
       console.log(data)
       setWeatherDetails({
