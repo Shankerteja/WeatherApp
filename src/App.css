@@ -19,7 +19,7 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  padding: 40px 10px;
+  padding: 20px 10px;
   gap: 20px;
 
 }
@@ -33,11 +33,11 @@
 
 .time{
   color: #fff;
-  font-size: 11px;
+  font-size: 15px;
 }
 @media screen and (min-width:400px){
   .time{
-    font-size: 15px;
+    font-size: 17px;
     
   }
 }
@@ -93,7 +93,7 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .temperature{
   font-size: 90px;
@@ -102,8 +102,13 @@
 }
 .city-name{
   color: #000;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
+}
+@media screen and (min-width:430px){
+  .city-name{
+    font-size: 70px;
+  }
 }
 h4{
   color: black;
