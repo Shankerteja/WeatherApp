@@ -11,7 +11,7 @@
 }
 
 .app-container{
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2024/06/21/15/18/road-8844555_1280.jpg");
   background-size: cover;
 
@@ -23,7 +23,24 @@
   gap: 20px;
 
 }
+.situation{
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #000;
+  font-size: 12px;
+}
 
+.time{
+  color: #fff;
+  font-size: 11px;
+}
+@media screen and (min-width:400px){
+  .time{
+    font-size: 15px;
+    
+  }
+}
 .weather-card{
   width: 100%;
   max-width: 700px;
@@ -57,13 +74,15 @@
   border-radius: 10px;
   border: 2px solid #fff;
   background-color: transparent;
+
+  
 }
 .search-container button{
   padding: 10px 24px;
   border-radius: 10px;
   
-  background-color: orange;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border: none;
   cursor: pointer;
 }
